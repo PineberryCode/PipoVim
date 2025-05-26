@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/mindlunny/Desktop/local-github-repository/EdgeComputingProfessor/src-tauri/src/repository'
+let g:netrw_dirhist_9='/home/mindlunny/Desktop/local-github-repository/EdgeComputingProfessor/src-tauri/src'
+let g:netrw_dirhist_8='/home/mindlunny/Desktop/local-github-repository/EdgeComputingProfessor/src-tauri'
+let g:netrw_dirhist_7='/home/mindlunny/Desktop/local-github-repository/EdgeComputingProfessor'
+let g:netrw_dirhist_6='/home/mindlunny/Desktop/local-github-repository/EdgeComputingProfessor/src-tauri/src/models'
+let g:netrw_dirhist_5='/home/mindlunny/Desktop/local-github-repository/EdgeComputingProfessor/src-tauri/src'
+let g:netrw_dirhist_4='/home/mindlunny/Desktop/local-github-repository/EdgeComputingProfessor/src-tauri'
+let g:netrw_dirhist_3='/home/mindlunny/Desktop/local-github-repository/EdgeComputingProfessor'
+let g:netrw_dirhist_2='/home/mindlunny/Desktop/local-github-repository/EdgeComputingProfessor/src-tauri/src/models'
+let g:netrw_dirhist_1='/home/mindlunny/Desktop/local-github-repository/EdgeComputingProfessor/src-tauri/src'
