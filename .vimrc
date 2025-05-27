@@ -72,6 +72,11 @@ Plug 'shun/ddc-vim-lsp'
 Plug 'rust-lang/rust.vim'
 Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'vim-airline/vim-airline' " Status bar
+Plug 'vim-airline/vim-airline-themes'
+Plug 'preservim/tagbar' " Navigation (functions, class, structs, etc)
+Plug 'junegunn/fzf', {'do': './install --all'} " Fzf (require Fzf CLI)
+Plug 'junegunn/fzf.vim' " to integrate Fzf with Vim
 call plug#end()
 " }}}
 
