@@ -45,6 +45,7 @@ set wildmode=list:longest
 
 " Vimscript initialization file
 colorscheme wildcharm
+set termguicolors
 
 " No visual lines
 set display=truncate
@@ -62,21 +63,34 @@ inoremap < <><left>
 " PLUGINS ---------------------------------------------------------------- {{{
 " Plugin code goes here.
 call plug#begin()
-Plug 'tpope/vim-sensible'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'Shougo/ddc.vim'
-Plug 'shun/ddc-vim-lsp'
-Plug 'rust-lang/rust.vim'
-Plug 'dense-analysis/ale'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'vim-airline/vim-airline' " Status bar
-Plug 'vim-airline/vim-airline-themes'
-Plug 'preservim/tagbar' " Navigation (functions, class, structs, etc)
-Plug 'junegunn/fzf', {'do': './install --all'} " Fzf (require Fzf CLI)
-Plug 'junegunn/fzf.vim' " to integrate Fzf with Vim
+	Plug 'tpope/vim-sensible'
+	Plug 'prabirshrestha/vim-lsp'
+	Plug 'mattn/vim-lsp-settings'
+	Plug 'prabirshrestha/asyncomplete.vim'
+	Plug 'prabirshrestha/asyncomplete-lsp.vim'
+	Plug 'Shougo/ddc.vim'
+	Plug 'shun/ddc-vim-lsp'
+	Plug 'rust-lang/rust.vim'
+	Plug 'dense-analysis/ale'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'tpope/vim-fugitive' " Git integration 
+	Plug 'vim-airline/vim-airline' " Status bar
+	Plug 'vim-airline/vim-airline-themes'
+	Plug 'preservim/tagbar' " Navigation (functions, class, structs, etc)
+	Plug 'junegunn/fzf', {'do': './install --all'} " Fzf (require Fzf CLI)
+	Plug 'junegunn/fzf.vim' " to integrate Fzf with Vim
+	Plug 'pangloss/vim-javascript'
 call plug#end()
 " }}}
 
+" Autocomplete with tab                                                                                                     
+inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#next(1) : Check_back_space()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+                                                       
+function! Check_back_space() abort                     
+	let col = col('.') - 1                             
+	return !col || getline('.')[col - 1] =~ '\s' ? "\<TAB>" : "\<C-r>=coc#pum#_fallback_word()\<CR>"
+endfunction                                            
+                                                      
+nmap <silent> <leader>a <Plug>(coc-codeaction-cursor)  
+xmap <silent> <leader>a <Plug>(coc-codeaction-selected)
