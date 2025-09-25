@@ -43,3 +43,11 @@ This configuration leverages `vim-plug` to manage a set of powerful plugins:
   * `leader` + `a` (normal mode): Trigger code actions at the cursor.
   * `leader` + `a` (visual mode): Trigger code actions for the selected text.
     (Assuming `<leader>` is set to `\` by default, or whatever you have configured.)
+
+> [!NOTE]
+> Enable autocomplete for Rust, installing theses: `coc-tsserver`, `coc-rust-analyzer` & `coc-json`
+
+Command: 
+```vim
+ :CocInstall coc-tsserver coc-rust-analyzer coc-json
+```
