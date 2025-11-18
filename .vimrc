@@ -15,14 +15,14 @@ set smartindent
 " Turn syntax highlighting on.
 syntax on
 
-" Set tab width to 4 columns.
-set tabstop=4
+" Set tab width to 2 columns.
+set tabstop=2
 
-" Indentation uses 4 spaces
-set shiftwidth=4
+" Indentation uses 2 spaces
+set shiftwidth=2
 
 " Backspace & Tab works it would have 4 spaces
-set softtabstop=4
+set softtabstop=2
 
 " Add numbers to each line on the left-hand side.
 set number
@@ -64,14 +64,14 @@ inoremap < <><left>
 " Plugin code goes here.
 call plug#begin()
 	Plug 'tpope/vim-sensible'
-	Plug 'prabirshrestha/vim-lsp'
-	Plug 'mattn/vim-lsp-settings'
-	Plug 'prabirshrestha/asyncomplete.vim'
-	Plug 'prabirshrestha/asyncomplete-lsp.vim'
-	Plug 'Shougo/ddc.vim'
-	Plug 'shun/ddc-vim-lsp'
+	" Plug 'prabirshrestha/vim-lsp'
+	" Plug 'mattn/vim-lsp-settings'
+	" Plug 'prabirshrestha/asyncomplete.vim'
+	" Plug 'prabirshrestha/asyncomplete-lsp.vim'
+	" Plug 'Shougo/ddc.vim'
+	" Plug 'shun/ddc-vim-lsp'
 	Plug 'rust-lang/rust.vim'
-	Plug 'dense-analysis/ale'
+	" Plug 'dense-analysis/ale'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'tpope/vim-fugitive' " Git integration 
 	Plug 'vim-airline/vim-airline' " Status bar
