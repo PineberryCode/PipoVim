@@ -16,13 +16,13 @@ set smartindent
 syntax on
 
 " Set tab width to 2 columns.
-set tabstop=2
+set tabstop=4
 
 " Indentation uses 2 spaces
-set shiftwidth=2
+set shiftwidth=4
 
 " Backspace & Tab works it would have 4 spaces
-set softtabstop=2
+set softtabstop=4
 
 " Add numbers to each line on the left-hand side.
 set number
