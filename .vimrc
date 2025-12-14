@@ -83,6 +83,9 @@ call plug#begin()
 call plug#end()
 " }}}
 
+" Jump to Definition
+nmap <silent> <leader>j :call CocActionAsync('jumpDefinition')<CR>
+
 " Autocomplete with tab                                                                                                     
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#next(1) : Check_back_space()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
