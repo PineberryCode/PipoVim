@@ -58,7 +58,6 @@ inoremap " ""<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
-inoremap < <><left>
 
 " PLUGINS ---------------------------------------------------------------- {{{
 " Plugin code goes here.
