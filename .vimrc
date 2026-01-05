@@ -63,6 +63,7 @@ inoremap { {}<left>
 " Plugin code goes here.
 call plug#begin()
 	Plug 'tpope/vim-sensible'
+	Plug 'tpope/vim-surround'
 	" Plug 'prabirshrestha/vim-lsp'
 	" Plug 'mattn/vim-lsp-settings'
 	" Plug 'prabirshrestha/asyncomplete.vim'
